@@ -3,14 +3,34 @@
     AspireAutomatedEmails.ps1
 
     Written by Vlad Radu (vlradu@microsoft.com), 2022.
-
+    
     Requires the Microsoft.Graph.Authentication and Microsoft.Graph.Users PowerShell modules to run.
     Assumes the csv contains 4 columns named NewHireEmail,BuddyEmail,NewHireName,BuddyName. If names
     are different, this can be configured when calling the Send-AspireEmail function (e.g., change
     $Pair.NewHireName to $Pair.NewAspireName if the column is named NewAspireName).
 
-    To be used internally to automate the sending of emails to new waves of Aspires. 
-    Use at your own risk.  No warranties are given.
+    MIT License
+
+    Copyright (c) 2022 Vlad-Andrei Radu
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
 .SYNOPSIS
     Basic script that uses Graph API PowerShell SDK to send batches of emails.
     
