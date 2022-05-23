@@ -104,7 +104,7 @@ function Send-AspireEmail
             <tr style="text-align: center;">
             <td style="width: 100%;">
             <p><span style="color: #ffffff;">Hi there $AspireName and $BuddyName,</span></p>
-            <p><span style="color: #ffffff;">We've paired you up. K thx bye.</span></p>
+            <p><span style="color: #ffffff;">We've paired you up using this amazing template. K thx bye.</span></p>
             </td>
             </tr>
             </tbody>
@@ -120,7 +120,7 @@ function Send-AspireEmail
 
     $MailBody = @{
         Message = @{
-            Subject = "Test Subject";
+            Subject = "Aspire Test Subject";
             Body = @{
                 Content = $MailContent; 
                 ContentType = "HTML"
