@@ -1,4 +1,4 @@
-# Aspire-Send-Batch-Emails
+# Send Batch Emails
 This is a short PowerShell script used to automate the sending of buddy pairing emails for new waves of Microsoft Aspires.  
 Can be used as a general example for sending batches of emails in any scenario.
 
