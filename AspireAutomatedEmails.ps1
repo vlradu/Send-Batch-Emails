@@ -3,7 +3,7 @@
     AspireAutomatedEmails.ps1
 
     Written by Vlad Radu (vlradu@microsoft.com), 2022.
-    
+
     Requires the Microsoft.Graph.Authentication and Microsoft.Graph.Users PowerShell modules to run.
     Assumes the csv contains 4 columns named NewHireEmail,BuddyEmail,NewHireName,BuddyName. If names
     are different, this can be configured when calling the Send-AspireEmail function (e.g., change
@@ -57,6 +57,7 @@
     instead of setting the $MailContent variable directly in this script.
     NOTE: In order to personalize the email, $AspireName needs to be replaced with {0} and 
     $BuddyName with {1} in the text of the HTML file, they will point to the Aspires' and buddies' names.
+
 .EXAMPLE
     .\AspireAutomatedEmails.ps1 -CsvFile ".\ExampleList.csv"
 
