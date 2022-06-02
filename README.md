@@ -1,7 +1,12 @@
 # Send Batch Emails
 This is a short PowerShell script used to automate the sending of buddy pairing emails for new waves of Microsoft Aspires.  
 Can be used as a general example for sending batches of emails in any scenario.
-
+**Requires the Graph PowerShell SDK to run, specifically the Authentication and User modules. They can be installed directly a PowerShell session via:**
+```PowerShell
+Install-Module Microsoft.Graph.Authentication
+Install-Module Microsoft.Graph.Users
+```
+# Description
 ```PowerShell
 <#
 .SYNOPSIS
